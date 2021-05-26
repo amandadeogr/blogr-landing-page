@@ -1,13 +1,135 @@
 * {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
 }
 
 header {
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
+  height: 58vh;
+  background: url(images/bg-pattern-intro.svg), linear-gradient(to right,#ff8f70, #ff3d54);
+  border-radius: 0 0 0 100px;
 }
 
-nav ul {
+.barra-superior, nav ul  {
   display: flex;
+  background-color: transparent;
 }
+
+.container {
+  display: flex;
+  width: 75%;
+  margin: auto;
+}
+
+.barra-superior {
+  padding: 50px 20px 10px;
+}
+
+.barra-superior a {
+  color: #fff;
+  margin-right: 30px;
+}
+
+.direita {
+  margin-left: auto;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+.links-nav {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.principal {
+  background-color: white;
+  color: #ff525d;
+}
+
+.principal:hover {
+  background-color: #ff7a85;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.secundario {
+  background-color: transparent;
+  color: #fff;
+}
+
+/*estilo header*/
+
+.box {
+  margin-top: 100px;
+}
+
+h1, p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.first, .third {
+  margin: 100px 0;
+}
+
+.first .container, .second .container, .third .container {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first h3, .third h3{
+  color: #1f3f5b;
+}
+
+.first p, .third p {
+  color: #4b5862;
+}
+
+.first .image img {
+  width: 40vw;
+  max-width: 40vw;
+  margin-left: 100px;
+}
+
+.second {
+  background: url(images/bg-pattern-circles.svg) no-repeat bottom left,  hsl(237, 17%, 21%);
+  border-radius: 0 0 0 100px;
+}
+
+.second h2, .second p {
+  color: white;
+}
+
+.third .container {
+  margin: 0;
+  width: 85%;
+}
+
+
+
+

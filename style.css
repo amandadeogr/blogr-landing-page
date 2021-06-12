@@ -5,6 +5,42 @@
   padding: 0;
 }
 
+.barra-superior, a, .btn{
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+h1, h2, h3, p {
+  font-family: 'Overpass', sans-serif;
+}
+
+h1, p {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-one {
+  margin-bottom: 60px;
+}
+
 body {
   background-color: #f4f4f4;
 }
@@ -29,9 +65,10 @@ header {
 
 .barra-superior {
   padding: 50px 20px 10px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.barra-superior a {
+a {
   color: #fff;
   margin-right: 30px;
 }
@@ -50,6 +87,8 @@ header {
   margin-top: 10px;
 }
 
+/* BUTTONS */
+
 .btn {
   padding: 10px;
   border-radius: 20px;
@@ -58,14 +97,20 @@ header {
   font-weight: 600;
 }
 
+.buttons {
+  margin-top: 50px;
+}
+
 .principal {
   background-color: white;
   color: #ff525d;
+  margin-right: 15px;
 }
 
 .principal:hover {
   background-color: #ff7a85;
   color: #fff;
+  border: #ff7a85;
   transition: 0.5s;
 }
 
@@ -74,23 +119,18 @@ header {
   color: #fff;
 }
 
+.secundario:hover {
+  background-color: white;
+  color: #ff7a85;
+  transition: 0.5s;
+}
+
+
+
 /*estilo header*/
 
 .box {
   margin-top: 100px;
-}
-
-h1, p {
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.buttons {
-  margin-top: 50px;
-}
-
-h1 {
-  font-size: 60px;
 }
 
 .first, .third {
@@ -102,7 +142,7 @@ h1 {
   align-items: center;
 }
 
-.first h3, .third h3{
+.first h3, .third h3, h2{
   color: #1f3f5b;
 }
 
@@ -118,18 +158,59 @@ h1 {
 
 .second {
   background: url(images/bg-pattern-circles.svg) no-repeat bottom left,  hsl(237, 17%, 21%);
-  border-radius: 0 0 0 100px;
+  border-radius: 0 100px;
 }
 
-.second h2, .second p {
+.second h3, .second p {
   color: white;
 }
+
+.second h3 {
+  font-size: 40px;
+}
+
+section p {
+  width: 30vw;
+}
+
 
 .third .container {
   margin: 0;
   width: 85%;
 }
 
+footer {
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 100px 0 0;
+  height: 40vh;
+  display: flex;
+}
 
+footer .container {
+  justify-content: space-around;
+  align-self: center;
+  color: white;
+}
 
+footer .container h4 {
+  font-size: 35px;
+}
 
+footer .container h5 {
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+}
+
+footer ul li a {
+  color: hsl(240, 2%, 79%);
+}
+
+footer ul li a:hover {
+  color: hsl(240, 2%, 79%);
+  text-decoration: underline;
+  transition: 0.5s;
+}
